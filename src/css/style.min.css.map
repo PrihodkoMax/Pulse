@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,AAAC,CACD,WAAW,CAAE,6BAA6B,CAC1C",
+    "sources": [
+        "../sass/style.scss",
+        "../sass/base/_variables.scss",
+        "../sass/base/_mixins.scss",
+        "../sass/blocks/_general.scss",
+        "../sass/blocks/_media.scss"
+    ],
+    "names": [],
+    "file": "style.min.css"
+}
