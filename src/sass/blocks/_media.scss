@@ -32,11 +32,6 @@
 	.advantages {
 		min-height: 430px;
 		padding: 40px 0 60px 0;
-		&__title {
-			h2 {
-				font-size: 26px;
-			}
-		}
 		&__items {
 			margin-top: 40px;   
 			padding: 0px 10px 0 10px;
@@ -48,6 +43,10 @@
 			font-size: 13px;
 			line-height: 22px;
 		}
+	}
+	.consultation {
+		min-height: 450px;
+		padding: 50px 0 70px 0;
 	}
 }
 
@@ -62,71 +61,24 @@
 			}
 		}
 	}
+	.consultation {
+		min-height: 640px;
+		&__descr {
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	.title {
+		font-size: 28px;
+		&_left {
+			font-size: 26px;
+			text-align: center;
+			line-height: 32px;
+		}
+	}
 }
 
-// Mobile Menu panel
-
-// @media (max-width: 768px) {
-// 	.menu {
-// 		position: fixed;
-// 		display: flex;
-// 		flex-direction: column;
-// 		justify-content: center;
-// 		align-items: center;
-// 		top: 0;
-// 		left: -100%;
-// 		width: 50%;
-// 		height: 100vh;
-// 		padding: 20px 15px;
-// 		background-color: (0,0,0, 0.8);
-// 		transition: 0.6s all;
-// 		&_active {
-// 			left: 0;
-// 		}
-// 		&__item {
-// 			border: none;
-// 			padding-right: 0;
-// 			margin: 10px 0;
-// 		}
-// 	}
-// 	.hambuger {
-// 		display: block;
-// 		position: absolute;
-// 		right: 10px;
-// 		top: 50%;
-// 		transform: translateY(-50%);
-// 		width: 26px;
-//			height: 12px; ---> heigth 3*2px + margin-bottom 3*2px
-// 		span {
-// 			display: block;
-// 			height: 2px;
-// 			width: 100%;
-// 			background-color: #fff;
-// 			margin-bottom: 2px;
-// 			transition: 0.6s all;
-// 		}
-// 		&_active {
-// 			span {
-// 				margin-bottom: -2px;
-// 				&:nth-child(1) {
-// 					transform: translateY(3px) rotate(-45deg);
-// 				}
-// 				&:nth-child(2) {
-// 					display: none;
-// 				}
-// 				&:nth-child(3) {
-// 					transform: translateY(3px) rotate(45deg);
-// 				}
-// 			}	
-// 		}
-// 	}
-// }
-
-// In _general.scss need to add
-
-// .hambuger {
-// 	display: none;
-// }
 
 @media (max-width: 576px) {
 	.promo {
@@ -184,11 +136,6 @@
 		font-size: 16px;
 	}
 	.advantages {
-		&__title {
-			h2 {
-				font-size: 20px;
-			}
-		}
 		&__items {
 			flex-direction: column;
 			align-items: center;
@@ -201,5 +148,34 @@
 		&__text {
 			margin-top: 0;
 		}
-	}	
+	}
+	.title {
+		font-size: 25px;
+		&_left {
+			font-size: 18px;
+			text-align: center;
+			line-height: 30px;
+		}
+	}
+	.consultation {
+		&__descr {
+			text-align: center;
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+	.feed-form {
+		margin: 50px auto 0 auto;
+		width: 280px;
+		input {
+		height: 35px;
+		}
+	}
+	.button {
+		&_submit {
+			height: 42px;
+			font-size: 13px;
+			margin: 20px auto 0 auto;
+		}
+	}
 }
