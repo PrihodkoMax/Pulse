@@ -1,61 +1,55 @@
 .promo {
-	min-height: 650px;
-	padding: 21px 0 93px 0;
-	background: url(../img/bg.png) center (center/cover) no-repeat;
-	background-position: inherit;
-	&__wrapper {
-		display: flex;
-		flex-direction: column;
-		align-items:flex-end;
-		margin-top: 165px;
-	}
-	&__header {
-		font-weight: 700;
-		font-size: 42px;
-		text-transform: uppercase;
-		color: #fff;
-		margin-bottom: 0;
-	}
-	&__subheader {
-		font-weight: 500;
-		font-size: 24px;
-		text-transform: uppercase;
-		color: #FFFFFF;
-		margin-top: 17px;
-	}
-	&__icons {
-		width: 424px;
-		margin-top: 60px;
-		display: flex;
-		justify-content: space-between;
-	}
-	&__icon {
-		width: 105px;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 14px;
-		color: #FFFFFF;
-		text-align: center;
-		img {
-			display: block;
-			margin: 0 auto;
-			margin-bottom: 20px;
-		}
-	}
-	&__link {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 25px;
-		color: #fff;
-		margin-top: 9px;
-		a {
-			text-transform: uppercase;
-			text-decoration: underline;
-			color: #fff;
-			&:hover {
-				color: $hover-color;
-				text-decoration: none;
-			}
-		}
-	}
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url("../img/main.jpg") center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &__header {
+        color: #ffffff;
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 42px;
+    }
+    &__subheader {
+        margin-top: 17px;
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__icon {
+        width: 108px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+    &__link {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 18px;
+        a {
+            color: #ffffff;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
 }
