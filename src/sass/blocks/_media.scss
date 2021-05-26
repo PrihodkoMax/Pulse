@@ -61,6 +61,13 @@
 			margin: 40px 20px 0 40px;
 		}
 	}
+	.footer {
+		&__info {
+			width: 390px;
+			height: 240px;
+			padding: 30px 10px;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -106,6 +113,20 @@
 	.feedbacks {
 		&__inner {
 			margin: 30px 20px 0 50px;
+		}
+	}
+	.footer {
+		&__info {
+			width: 350px;
+			height: 180px;
+			padding: 15px 10px;
+		}
+		&__addr {
+			margin-bottom: 25px;
+		}
+		&__phone {
+			margin-bottom: 27px;
+			font-size: 24px;
 		}
 	}
 }
@@ -261,6 +282,21 @@
 		}
 		&__text {
 			margin-top: 10px;
+		}
+	}
+	.footer {
+		&__info {
+			width: 320px;
+			height: 140px;
+			padding: 20px 10px;
+		}
+		&__addr {
+			display: none;
+		}
+		&__phone {
+			margin-bottom: 20px;
+			font-size: 24px;
+			line-height: 28px;
 		}
 	}
 }
