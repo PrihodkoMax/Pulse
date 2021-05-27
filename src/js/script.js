@@ -34,7 +34,7 @@ $(document).ready(function () {
 	toggleSlide('.catalog-item__link');
 	toggleSlide('.catalog-item__back');
 
-	// Modal
+	// Modal //
 
 	$('[data-modal=consultation]').on('click', function () {
 		$('.overlay, #consultation').fadeIn('slow');
@@ -50,7 +50,7 @@ $(document).ready(function () {
 		});
 	});
 
-	// Form validation
+	// Form validation //
 
 	function validateForm(form) {
 		$(form).validate({
@@ -76,4 +76,7 @@ $(document).ready(function () {
 	validateForm('#consultation form');
 	validateForm('#order form');
 
+	// Phone Mask //
+
+	$('input[name=phone]').mask("+3(99)99-999-99-99");
 });
