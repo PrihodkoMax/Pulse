@@ -49,4 +49,31 @@ $(document).ready(function () {
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	// Form validation
+
+	function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Пожалуйста, введите свое имя",
+				phone: "Пожалуйста, введите свой номер телефона",
+				email: {
+					required: "Пожалуйста, введите свою почту",
+					email: "Адрес Вашей почты должен быть в формате name@domain.com"
+				}
+			}
+		});
+	};
+	validateForm('#consultation-form');
+	validateForm('#consultation form');
+	validateForm('#order form');
+
 });
