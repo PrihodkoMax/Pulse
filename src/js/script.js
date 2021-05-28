@@ -79,4 +79,41 @@ $(document).ready(function () {
 	// Phone Mask //
 
 	$('input[name=phone]').mask("+3(99)99-999-99-99");
+
+	// Mailer //
+
+	// $('form.').submit(function (e) {
+	// 	e.preventDefault();
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mailer/smart.php",
+	// 		data: $(this).serialize()
+	// 	}).done(function () {
+	// 		$(this).find("input").val("");
+	// 		$('#consultation, #order').fadeOut();
+	// 		$('.overlay, #thanks').fadeIn('slow');
+
+	// 		$('form').trigger('reset');
+	// 	});
+	// 	return false;
+	// });
+
+	// Pageup //
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
+
+	// Smooth scroll //
+
+	$("a[href^='#']").click(function () {
+		const _href = $(this).attr("href");
+		$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+		return false;
+	});
+
 });
